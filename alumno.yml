@@ -3,7 +3,7 @@ eureka:
     instance:
       preferIpAddress: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8765/eureka
 server:
   port: ${random.int(3335,3340)}
   servlet:
