@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: ${PORT:3333}
+  servlet:
+    context-path: /microservicio
+spring:
+  data:
+    mongodb:
+      database: alumnoDB
+      host: localhost
+      port: 27017
