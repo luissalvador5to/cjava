@@ -3,5 +3,5 @@ eureka:
     fetchRegistry: false
     registerWithEureka: false
 server:
-  port: 8765
-
+  port: 8761
+  
