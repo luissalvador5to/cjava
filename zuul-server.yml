@@ -1,0 +1,20 @@
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+logging:
+  level:
+    com:
+      netflix: DEBUG
+server:
+  port: 6666
+zuul:
+  routes:
+    alumno:
+      service-id: MICRO-ALUMNO
+    micro-alumno:
+      path: /alumno/**
