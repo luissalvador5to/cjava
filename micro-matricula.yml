@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+microservicio:
+  alumno:
+    client:
+      get:
+        uri: http://MICRO.ALUMNO/microservicio/alumno/
+  curso:
+    client:
+      get:
+        uri: http://MICRO.CURSO/microservicio/curso/
+server:
+  port: ${PORT:5555}
+  servlet:
+    context-path: /microservicio
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/matriculaDB?autoReconnect=true&useSSL=false
+    username: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
