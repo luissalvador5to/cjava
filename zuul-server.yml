@@ -14,7 +14,6 @@ server:
   port: 6666
 zuul:
   routes:
-    alumno:
-      service-id: MICRO-ALUMNO
     micro-alumno:
       path: /alumno/**
+      service-id: MICRO-ALUMNO
