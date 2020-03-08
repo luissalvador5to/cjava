@@ -6,11 +6,11 @@ microservicio:
   alumno:
     client:
       get:
-        uri: http://MICRO.ALUMNO/microservicio/alumno/
+        uri: http://MICRO-ALUMNO/microservicio/alumno/
   curso:
     client:
       get:
-        uri: http://MICRO.CURSO/microservicio/curso/
+        uri: http://MICRO-CURSO/microservicio/curso/
 server:
   port: ${PORT:5555}
   servlet:
