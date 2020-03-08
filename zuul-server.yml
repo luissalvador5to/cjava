@@ -17,3 +17,6 @@ zuul:
     micro-alumno:
       path: /alumno/**
       service-id: MICRO-ALUMNO
+    micro-curso:
+      path: /curso/**
+      service-id: MICRO-CURSO
