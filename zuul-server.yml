@@ -20,3 +20,6 @@ zuul:
     micro-curso:
       path: /curso/**
       service-id: MICRO-CURSO
+    micro-matricula:
+      path: /matricula/**
+      service-id: MICRO-MATRICULA
